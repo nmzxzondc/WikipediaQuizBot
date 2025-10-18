@@ -70,7 +70,7 @@ def IdentifyNSFWText(string):
     return False
 
 
-r = requests.get(PopularArticleAPI, headers=DefaultHeaders)
+r = requests.get(PopularArticlesAPI, headers=DefaultHeaders)
 data = r.json()
 
 
@@ -163,5 +163,4 @@ for filteredPages in PagesSelected:
 print(info, len(info))
     
    
-
 
