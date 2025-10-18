@@ -16,7 +16,7 @@ Day = current_time.day - 2
 BaseLink = "https://en.wikipedia.org/w/api.php"
 PopularArticleAPI = f"https://wikimedia.org/api/rest_v1/metrics/pageviews/top/en.wikipedia/all-access/{Year}/{Month}/{Day}"
 
-UserAgent = "WikiQuizBot/0.1 (contact: silaslrs16@gmail.com)"
+UserAgent = "WikiQuizBot/0.1 (contact: wikiquizbotcontactemail.unified438@slmails.com)"
 DefaultHeaders = {"User-Agent":UserAgent}
 
 
@@ -163,5 +163,6 @@ for filteredPages in PagesSelected:
 print(info, len(info))
     
    
+
 
 
