@@ -14,7 +14,7 @@ Month = current_time.month
 Day = current_time.day - 2
     
 BaseLink = "https://en.wikipedia.org/w/api.php"
-PopularArticleAPI = f"https://wikimedia.org/api/rest_v1/metrics/pageviews/top/en.wikipedia/all-access/{Year}/{Month}/{Day}"
+PopularArticlesAPI = f"https://wikimedia.org/api/rest_v1/metrics/pageviews/top/en.wikipedia/all-access/{Year}/{Month}/{Day}" # Used so the articles make sense and arent extremely niche
 
 UserAgent = "WikiQuizBot/0.1 (contact: wikiquizbotcontactemail.unified438@slmails.com)"
 DefaultHeaders = {"User-Agent":UserAgent}
