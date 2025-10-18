@@ -58,20 +58,6 @@ Output:
     
 
 
-def testFunction(url):
-    classifier = pipeline("image-classification", model="Falconsai/nsfw_image_detection")
-    r = requests.get(url, stream=True, headers=DefaultHeaders)
-    r.raise_for_status()
-    
-    img = Image.open(BytesIO(r.content))
-    result = classifier(img)
-    print(result)
-    NormalLabel = result[0] 
-    NSFWLabel = result[1]
-   
-    if NSFWLabel['score'] >= 0.1:
-        print("AHHHH")
-
 def IdentifyNSFWText(string):
     string = string.lower()
     if "sex" in string:
@@ -177,4 +163,5 @@ for filteredPages in PagesSelected:
 print(info, len(info))
     
    
+
 
